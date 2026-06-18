@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-06-18T10:31:04 EDT" name="Default suite" finished-at="2026-06-18T10:31:13 EDT" duration-ms="8943">
+    <groups>
+    </groups>
+    <test started-at="2026-06-18T10:31:04 EDT" name="Default test" finished-at="2026-06-18T10:31:13 EDT" duration-ms="8943">
+      <class name="testscripts.ManageContactTests">
+        <test-method is-config="true" signature="browserInitialization()[pri:0, instance:testscripts.ManageContactTests@368f2016]" started-at="2026-06-18T10:31:04 EDT" name="browserInitialization" finished-at="2026-06-18T10:31:08 EDT" duration-ms="3848" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserInitialization -->
+        <test-method signature="editContactSuccessfully()[pri:0, instance:testscripts.ManageContactTests@368f2016]" started-at="2026-06-18T10:31:08 EDT" name="editContactSuccessfully" description="Verifying editing a contact in Manage Contact Page" finished-at="2026-06-18T10:31:13 EDT" duration-ms="5052" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editContactSuccessfully -->
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testscripts.ManageContactTests@368f2016]" started-at="2026-06-18T10:31:13 EDT" name="browserQuit" finished-at="2026-06-18T10:31:13 EDT" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=editContactSuccessfully status=SUCCESS method=ManageContactTests.editContactSuccessfully()[pri:0, instance:testscripts.ManageContactTests@368f2016] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+      </class> <!-- testscripts.ManageContactTests -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
