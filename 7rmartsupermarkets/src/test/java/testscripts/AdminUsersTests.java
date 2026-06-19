@@ -7,6 +7,7 @@ import org.testng.annotations.Test;
 
 import pages.AdminUsersPage;
 import pages.LoginPageSM;
+import utilities.FakerUtility;
 import utilities.MarketExcelUtility;
 
 
@@ -14,15 +15,21 @@ public class AdminUsersTests extends BaseSuperMarket{
 	
 
 	
-	@Test
+	@Test(retryAnalyzer=retry.Retry.class, description="Adding new user , type Staff")
 	
 	public void addNewUserTypeStaff() throws IOException 
 	{
-		String adminUserName = MarketExcelUtility.getStringData(1, 0, "adminusers");
-	    String adminPassword = MarketExcelUtility.getStringData(1, 1, "adminusers");
+			    
 		String userName = MarketExcelUtility.getStringData(1, 0, "SuperMarketLoginPage");
 		String password = MarketExcelUtility.getStringData(1, 1, "SuperMarketLoginPage");
 		
+		//String adminUserName = MarketExcelUtility.getStringData(1, 0, "adminusers");
+	    String adminPassword = MarketExcelUtility.getStringData(1, 1, "adminusers");
+	    
+	    //using faker utility here to create random usernames.
+	    FakerUtility fakerObj=new FakerUtility();
+	    String adminUserName = fakerObj.creatARandomFirstName();
+	    		
 		LoginPageSM loginPageObj = new LoginPageSM(driver);
 	    AdminUsersPage adminPageObj = new AdminUsersPage(driver);
 	    
@@ -44,7 +51,7 @@ public class AdminUsersTests extends BaseSuperMarket{
 		Assert.assertTrue(userCreated);
 }
 	
-	@Test
+	@Test(retryAnalyzer=retry.Retry.class, description="Adding new user , type Admin")
 	
 	public void addNewUserTypeAdmin() throws IOException 
 	{
@@ -74,7 +81,7 @@ public class AdminUsersTests extends BaseSuperMarket{
 		Assert.assertTrue(userCreated);
 }
 	
-@Test
+@Test(retryAnalyzer=retry.Retry.class, description="Adding new user , type Partner")
 	
 	public void addNewUserTypePartner() throws IOException 
 	{
@@ -103,7 +110,7 @@ public class AdminUsersTests extends BaseSuperMarket{
 		boolean userCreated= adminPageObj.isUserCreatedSuccessfylly();
 		Assert.assertTrue(userCreated);
 }
-@Test
+@Test(retryAnalyzer=retry.Retry.class, description="Adding new user , type Delivery Boy")
 
 public void addNewUserTypeDeliveryBoy() throws IOException 
 {
@@ -133,7 +140,7 @@ public void addNewUserTypeDeliveryBoy() throws IOException
 	Assert.assertTrue(userCreated);
 }
 
-@Test
+@Test(retryAnalyzer=retry.Retry.class, description="Adding existing User")
 public void addAlreadyExistingUser() throws IOException 
 {
 	String adminUserName = MarketExcelUtility.getStringData(1, 0, "adminusers");

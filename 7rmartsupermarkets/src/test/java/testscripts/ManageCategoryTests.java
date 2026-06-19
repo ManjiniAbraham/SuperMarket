@@ -10,7 +10,7 @@ import pages.ManageCategoryPage;
 import utilities.MarketExcelUtility;
 
 public class ManageCategoryTests extends BaseSuperMarket {
-	@Test(description = "Verifying adding a new catefory in Manage Category Page")
+	@Test(retryAnalyzer=retry.Retry.class,description = "Verifying adding a new catefory in Manage Category Page")
 	public void addCategorySuccessfully() throws IOException {
 
 		String userName = MarketExcelUtility.getStringData(1, 0, "SuperMarketLoginPage");

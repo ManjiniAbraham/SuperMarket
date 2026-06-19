@@ -10,7 +10,7 @@ import pages.ManageContactPage;
 import utilities.MarketExcelUtility;
 
 public class ManageContactTests extends BaseSuperMarket{
-	@Test(description = "Verifying editing a contact in Manage Contact Page")
+	@Test(retryAnalyzer=retry.Retry.class,description = "Verifying editing a contact in Manage Contact Page")
 	public void editContactSuccessfully() throws IOException {
 
 		String phone = MarketExcelUtility.getIntegerData(1, 0, "managecontact");

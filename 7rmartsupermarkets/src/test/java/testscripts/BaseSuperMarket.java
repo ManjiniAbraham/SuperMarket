@@ -7,6 +7,7 @@ import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -24,7 +25,7 @@ public class BaseSuperMarket
 
 	@Parameters("browser")
 	@BeforeMethod	
-	public void browserInitialization()
+	public void browserInitialization(String browser) throws Exception
 	{
 		try 
 		{
@@ -36,8 +37,25 @@ public class BaseSuperMarket
 		{
 			System.out.println(e);
 		}
+		
+		
+		if(browser.equalsIgnoreCase("Edge")) 
+		{
+		driver = new EdgeDriver(); 
+		//To launch the browser. Here WebDriver is an Interface provided by selenium and ChromeDriver is a class provided by selenium. Each browser has its own drivers. For eg, if you want to open Edge browser give EdgeDriver instead of ChromeDriver.
+		// driver is the reference variable.
+		}
+		else if(browser.equalsIgnoreCase("FireFox"))
+		{
+			driver = new FirefoxDriver();
+			
+		}
+		else
+		{
+			throw new Exception("Invalid");
+		}
 	
-	driver = new EdgeDriver(); 
+	//driver = new EdgeDriver(); 
 	//driver.get("https://groceryapp.uniqassosiates.com/admin/login");
 	driver.get(properties.getProperty("url"));
 	//Syntax for implicit wait is driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(0));
