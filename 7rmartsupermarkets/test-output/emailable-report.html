@@ -8,80 +8,11 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">CrossbrowserTesting</th></tr>
-<tr><td><a href="#t0">FireFoxTest</a></td><td class="num">13</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">104,863</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">EdgeTest</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">1</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">13</th><th class="num">0</th><th class="num">0</th><th class="num attn">2</th><th class="num">104,864</th><th colspan="2"></th></tr>
+<tr><th colspan="8">testng</th></tr>
+<tr><td><a href="#t0">Edge</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">9,377</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">CrossbrowserTesting</th></tr></tbody><tbody id="t0"><tr><th colspan="4">FireFoxTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">testscripts.AdminUsersTests</td><td><a href="#m0">addAlreadyExistingUser</a></td><td rowspan="1">1781878231191</td><td rowspan="1">7542</td></tr><tr class="failedeven"><td><a href="#m1">addNewUserTypeStaff</a></td><td rowspan="1">1781878264437</td><td rowspan="1">7913</td></tr><tr><th colspan="4">FireFoxTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">testscripts.AdminUsersTests</td><td><a href="#m2">addNewUserTypeAdmin</a></td><td rowspan="1">1781878242098</td><td rowspan="1">3452</td></tr><tr class="passedeven"><td><a href="#m3">addNewUserTypeDeliveryBoy</a></td><td rowspan="1">1781878248904</td><td rowspan="1">3719</td></tr><tr class="passedeven"><td><a href="#m4">addNewUserTypePartner</a></td><td rowspan="1">1781878256198</td><td rowspan="1">4869</td></tr><tr class="passedodd"><td rowspan="4">testscripts.LoginTestsSM</td><td><a href="#m5">verifyLoginWithInvalidCredentials</a></td><td rowspan="1">1781878294789</td><td rowspan="1">608</td></tr><tr class="passedodd"><td><a href="#m6">verifyLoginWithInvalidPassword</a></td><td rowspan="1">1781878298782</td><td rowspan="1">634</td></tr><tr class="passedodd"><td><a href="#m7">verifyLoginWithInvalidUserName</a></td><td rowspan="1">1781878302854</td><td rowspan="1">680</td></tr><tr class="passedodd"><td><a href="#m8">verifyLoginWithValidCredentials</a></td><td rowspan="1">1781878306943</td><td rowspan="1">1372</td></tr><tr class="passedeven"><td rowspan="1">testscripts.LogoutTestsSM</td><td><a href="#m9">verifyLogout</a></td><td rowspan="1">1781878275733</td><td rowspan="1">2338</td></tr><tr class="passedodd"><td rowspan="1">testscripts.ManageCategoryTests</td><td><a href="#m10">addCategorySuccessfully</a></td><td rowspan="1">1781878319424</td><td rowspan="1">4985</td></tr><tr class="passedeven"><td rowspan="1">testscripts.ManageContactTests</td><td><a href="#m11">editContactSuccessfully</a></td><td rowspan="1">1781878311780</td><td rowspan="1">4093</td></tr><tr class="passedodd"><td rowspan="1">testscripts.ManageFooterTests</td><td><a href="#m12">verifyAddressUpdate</a></td><td rowspan="1">1781878223501</td><td rowspan="1">4293</td></tr><tr class="passedeven"><td rowspan="2">testscripts.ManageNewsTests</td><td><a href="#m13">addNews</a></td><td rowspan="1">1781878281392</td><td rowspan="1">3616</td></tr><tr class="passedeven"><td><a href="#m14">cancelNews</a></td><td rowspan="1">1781878288427</td><td rowspan="1">2960</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4" class="invisible"/></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">testng</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Edge &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testscripts.ManageFooterTests</td><td><a href="#m0">verifyAddressUpdate</a></td><td rowspan="1">1782137837549</td><td rowspan="1">4830</td></tr></tbody>
 </table>
-<h2>FireFoxTest</h2><h3 id="m0">testscripts.AdminUsersTests#addAlreadyExistingUser</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//i[contains(@class,&apos;fa-ban&apos;)]&quot;}
-  (Session info: MicrosoftEdge=149.0.4022.69)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: &apos;4.39.0&apos;, revision: &apos;126f156aee&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.1&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [7e4c901e069ab5d08d40aaa5d97b1889, findElement {using=xpath, value=//i[contains(@class,&apos;fa-ban&apos;)]}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 149.0.4022.69, fedcm:accounts: true, goog:processID: 45760, ms:edgeOptions: {debuggerAddress: localhost:65292}, msedge: {msedgedriverVersion: 149.0.4022.80 (2d040fee770f..., userDataDir: C:\Users\manji\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65292/devtoo..., se:cdpVersion: 149.0.4022.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 7e4c901e069ab5d08d40aaa5d97b1889
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:384)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:378)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy13.isDisplayed(Unknown Source)
-	at pages.AdminUsersPage.userAlreadyExists(AdminUsersPage.java:71)
-	at testscripts.AdminUsersTests.addAlreadyExistingUser(AdminUsersTests.java:161)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
-... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">testscripts.AdminUsersTests#addNewUserTypeStaff</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//i[contains(@class,&apos;fa-check&apos;)]&quot;}
-  (Session info: MicrosoftEdge=149.0.4022.69)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: &apos;4.39.0&apos;, revision: &apos;126f156aee&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.1&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [376f66eed608904e9c62ffedfd29bd1a, findElement {using=xpath, value=//i[contains(@class,&apos;fa-check&apos;)]}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 149.0.4022.69, fedcm:accounts: true, goog:processID: 4688, ms:edgeOptions: {debuggerAddress: localhost:50640}, msedge: {msedgedriverVersion: 149.0.4022.80 (2d040fee770f..., userDataDir: C:\Users\manji\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50640/devtoo..., se:cdpVersion: 149.0.4022.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 376f66eed608904e9c62ffedfd29bd1a
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:384)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:378)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy13.isDisplayed(Unknown Source)
-	at pages.AdminUsersPage.isUserCreatedSuccessfylly(AdminUsersPage.java:66)
-	at testscripts.AdminUsersTests.addNewUserTypeStaff(AdminUsersTests.java:43)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
-... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">testscripts.AdminUsersTests#addNewUserTypeAdmin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">testscripts.AdminUsersTests#addNewUserTypeDeliveryBoy</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">testscripts.AdminUsersTests#addNewUserTypePartner</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">testscripts.LoginTestsSM#verifyLoginWithInvalidCredentials</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">testscripts.LoginTestsSM#verifyLoginWithInvalidPassword</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">testscripts.LoginTestsSM#verifyLoginWithInvalidUserName</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m8">testscripts.LoginTestsSM#verifyLoginWithValidCredentials</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m9">testscripts.LogoutTestsSM#verifyLogout</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m10">testscripts.ManageCategoryTests#addCategorySuccessfully</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m11">testscripts.ManageContactTests#editContactSuccessfully</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m12">testscripts.ManageFooterTests#verifyAddressUpdate</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m13">testscripts.ManageNewsTests#addNews</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m14">testscripts.ManageNewsTests#cancelNews</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>EdgeTest</h2></body>
+<h2>Edge</h2><h3 id="m0">testscripts.ManageFooterTests#verifyAddressUpdate</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
 </html>

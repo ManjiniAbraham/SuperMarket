@@ -24,7 +24,7 @@ public class BaseSuperMarket
 	public FileInputStream fileinput;
 
 	@Parameters("browser")
-	@BeforeMethod	
+	@BeforeMethod(alwaysRun=true)	
 	public void browserInitialization(String browser) throws Exception
 	{
 		try 
@@ -62,19 +62,17 @@ public class BaseSuperMarket
 	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(WaitUtility.IMPLICITWAIT));
 	}
 	
-	@AfterMethod
-	/*public void browserQuitAndClose() 
+	@AfterMethod(alwaysRun=true)
+
+	public void browserQuit(ITestResult iTestResult) throws IOException 
 	{
-		driver.quit(); // Closes all browser windows or tabs
-		//driver.close(); //closes only the current browser window or tab
-	}*/
-	
-	public void browserQuit(ITestResult iTestResult) throws IOException {
-		if (iTestResult.getStatus() == ITestResult.FAILURE) {
+		if (iTestResult.getStatus() == ITestResult.FAILURE) 
+		{
 			ScreenshotUtility scrShot = new ScreenshotUtility(); // creating obj
 			scrShot.getScreenShot(driver, iTestResult.getName());
 		}
-
+		driver.quit(); // Closes all browser windows or tabs
+		//driver.close(); //closes only the current browser window or tab
 }
 }
 

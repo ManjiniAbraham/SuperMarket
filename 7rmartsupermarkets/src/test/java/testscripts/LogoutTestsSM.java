@@ -11,7 +11,7 @@ import utilities.MarketExcelUtility;
 
 public class LogoutTestsSM extends BaseSuperMarket{
 	
-	@Test(retryAnalyzer=retry.Retry.class,description="Verify logout functionality")
+	@Test(retryAnalyzer=retry.Retry.class,description="Verify logout functionality",groups= {"Regression"})
 	public void verifyLogout() throws IOException 
 	{	
 		String userName = MarketExcelUtility.getStringData(1, 0, "SuperMarketLoginPage");

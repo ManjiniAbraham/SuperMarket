@@ -55,11 +55,16 @@ public class AdminUsersTests extends BaseSuperMarket{
 	
 	public void addNewUserTypeAdmin() throws IOException 
 	{
-		String adminUserName = MarketExcelUtility.getStringData(2, 0, "adminusers");
+		//String adminUserName = MarketExcelUtility.getStringData(2, 0, "adminusers");
 	    String adminPassword = MarketExcelUtility.getStringData(2, 1, "adminusers");
 		String userName = MarketExcelUtility.getStringData(1, 0, "SuperMarketLoginPage");
 		String password = MarketExcelUtility.getStringData(1, 1, "SuperMarketLoginPage");
 		
+		
+		  //using faker utility here to create random usernames.
+	    FakerUtility fakerObj=new FakerUtility();
+	    String adminUserName = fakerObj.creatARandomFirstName();
+	    
 		LoginPageSM loginPageObj = new LoginPageSM(driver);
 	    AdminUsersPage adminPageObj = new AdminUsersPage(driver);
 	    
@@ -85,11 +90,15 @@ public class AdminUsersTests extends BaseSuperMarket{
 	
 	public void addNewUserTypePartner() throws IOException 
 	{
-		String adminUserName = MarketExcelUtility.getStringData(3, 0, "adminusers");
+		//String adminUserName = MarketExcelUtility.getStringData(3, 0, "adminusers");
 	    String adminPassword = MarketExcelUtility.getStringData(3, 1, "adminusers");
 		String userName = MarketExcelUtility.getStringData(1, 0, "SuperMarketLoginPage");
 		String password = MarketExcelUtility.getStringData(1, 1, "SuperMarketLoginPage");
 		
+		  //using faker utility here to create random usernames.
+	    FakerUtility fakerObj=new FakerUtility();
+	    String adminUserName = fakerObj.creatARandomFirstName();
+	    
 		LoginPageSM loginPageObj = new LoginPageSM(driver);
 	    AdminUsersPage adminPageObj = new AdminUsersPage(driver);
 	    
@@ -114,13 +123,17 @@ public class AdminUsersTests extends BaseSuperMarket{
 
 public void addNewUserTypeDeliveryBoy() throws IOException 
 {
-	String adminUserName = MarketExcelUtility.getStringData(4, 0, "adminusers");
+	//String adminUserName = MarketExcelUtility.getStringData(4, 0, "adminusers");
     String adminPassword = MarketExcelUtility.getStringData(4, 1, "adminusers");
 	String userName = MarketExcelUtility.getStringData(1, 0, "SuperMarketLoginPage");
 	String password = MarketExcelUtility.getStringData(1, 1, "SuperMarketLoginPage");
 	
 	LoginPageSM loginPageObj = new LoginPageSM(driver);
     AdminUsersPage adminPageObj = new AdminUsersPage(driver);
+    
+    //using faker utility here to create random usernames.
+    FakerUtility fakerObj=new FakerUtility();
+    String adminUserName = fakerObj.creatARandomFirstName();
     
 	loginPageObj.enterUserName(userName);
 	loginPageObj.enterPassword(password);

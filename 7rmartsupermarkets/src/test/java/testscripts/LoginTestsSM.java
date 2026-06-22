@@ -9,7 +9,7 @@ import pages.LoginPageSM;
 import utilities.MarketExcelUtility;
 
 public class LoginTestsSM extends BaseSuperMarket {
-	@Test(retryAnalyzer=retry.Retry.class,description="Verify Login with valid credentials")
+	@Test(retryAnalyzer=retry.Retry.class,description="Verify Login with valid credentials",groups= {"Regression"})
 	public void verifyLoginWithValidCredentials() throws IOException {
 		String userName = MarketExcelUtility.getStringData(1, 0, "SuperMarketLoginPage");
 		String password = MarketExcelUtility.getStringData(1, 1, "SuperMarketLoginPage");
