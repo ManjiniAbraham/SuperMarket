@@ -8,11 +8,13 @@ import org.openqa.selenium.support.PageFactory;
 import constant.MarketConstant;
 import utilities.FileUploadUtility;
 import utilities.PageUtility;
+import utilities.WaitUtility;
 
 public class ManageCategoryPage {
 	
 	public WebDriver driver;
 	PageUtility pageUtilityObj = new PageUtility();
+	WaitUtility waitUtilityObj = new WaitUtility();
 	
 	@FindBy(xpath="(//a[@href=\"https://groceryapp.uniqassosiates.com/admin/list-category\"])[2]")
 	WebElement manageCategoryMoreInfoLink;
@@ -43,7 +45,9 @@ public class ManageCategoryPage {
 	}
 
 	public void clickToAddNewCategory() {
-		manageCategoryNewButton.click();
+		waitUtilityObj.waitForElement(driver, manageCategoryNewButton);
+		pageUtilityObj.javaScriptClick(driver, manageCategoryNewButton);
+		//manageCategoryNewButton.click();
 	}
 	
 	public void giveCategoryName(String categoryName) {
@@ -52,6 +56,7 @@ public class ManageCategoryPage {
 	}
 	
 	public void selectDiscountGroup() {
+		
 		discountGroup.click();
 	}
 	
@@ -64,6 +69,7 @@ public class ManageCategoryPage {
 	}
 	
 	public void save() {
+		waitUtilityObj.waitForElement(driver, saveButton);
 		saveButton.click();
 		
 	}
