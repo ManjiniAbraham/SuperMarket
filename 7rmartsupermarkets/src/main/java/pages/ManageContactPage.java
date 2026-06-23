@@ -12,7 +12,7 @@ import utilities.WaitUtility;
 public class ManageContactPage {
 	
 	public WebDriver driver;
-	public WaitUtility waitUtility;
+	
 	
 	@FindBy(xpath="(//a[@href='https://groceryapp.uniqassosiates.com/admin/list-contact'])[2]")
 	WebElement manageContactMoreInfoLink;
@@ -69,14 +69,15 @@ public class ManageContactPage {
 	public void clickOnUpdateButton() {
 		// wait until clickable
 		WaitUtility waitUtilityObj = new WaitUtility();
-		waitUtilityObj.waitForElementToBeClickable(driver, updateButton);
+		//waitUtilityObj.waitForElementToBeClickable(driver, updateButton);
+		waitUtilityObj.waitForElement(driver, updateButton);
 
 		// scroll into view
 		PageUtility pageutilityObj = new PageUtility();
 		pageutilityObj.scrollIntoView(driver, updateButton);
 		
-		//scrollIntoView(driver, updateButton);
-		updateButton.click();
+		pageutilityObj.javaScriptClick(driver, updateButton);
+		//updateButton.click();
 	}
 	public void clickOnResetButton() {
 		resetButton.click();
