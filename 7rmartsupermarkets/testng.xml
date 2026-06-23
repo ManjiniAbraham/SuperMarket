@@ -9,10 +9,12 @@
     <classes>
     <class name="testscripts.LoginTestsSM"/>
     <class name="testscripts.LogoutTestsSM"/>
+    <class name="testscripts.ManageNewsTests"/>
+    
       <!--<class name="testscripts.ManageFooterTests"/>
       <class name="testscripts.AdminUsersTests"/>
       
-      <class name="testscripts.ManageNewsTests"/>
+      
       
       <class name="testscripts.ManageContactTests"/>
       <class name="testscripts.ManageCategoryTests"/>-->
