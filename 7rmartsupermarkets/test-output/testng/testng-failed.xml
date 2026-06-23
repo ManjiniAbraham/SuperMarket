@@ -4,16 +4,18 @@
   <listeners>
     <listener class-name="generateReport.Listeners"/>
   </listeners>
-  <test thread-count="5" name="ChromeTest(failed)">
-    <parameter name="browser" value="Chrome"/>
+  <test thread-count="5" name="FFTest(failed)">
+    <parameter name="browser" value="FireFox"/>
     <classes>
-      <class name="testscripts.ManageCategoryTests">
+      <class name="testscripts.AdminUsersTests">
         <methods>
-          <include name="addCategorySuccessfully"/>
+          <include name="addNewUserTypeStaff"/>
+          <include name="addNewUserTypeDeliveryBoy"/>
           <include name="browserQuit"/>
+          <include name="addNewUserTypeAdmin"/>
           <include name="browserInitialization"/>
         </methods>
-      </class> <!-- testscripts.ManageCategoryTests -->
+      </class> <!-- testscripts.AdminUsersTests -->
     </classes>
-  </test> <!-- ChromeTest(failed) -->
+  </test> <!-- FFTest(failed) -->
 </suite> <!-- Failed suite [testng] -->
