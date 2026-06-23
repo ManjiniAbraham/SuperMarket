@@ -6,6 +6,7 @@ import java.time.Duration;
 import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.ITestResult;
@@ -45,9 +46,9 @@ public class BaseSuperMarket
 		//To launch the browser. Here WebDriver is an Interface provided by selenium and ChromeDriver is a class provided by selenium. Each browser has its own drivers. For eg, if you want to open Edge browser give EdgeDriver instead of ChromeDriver.
 		// driver is the reference variable.
 		}
-		else if(browser.equalsIgnoreCase("FireFox"))
+		else if(browser.equalsIgnoreCase("Chrome"))
 		{
-			driver = new FirefoxDriver();
+			driver = new ChromeDriver();
 			
 		}
 		else
