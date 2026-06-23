@@ -24,12 +24,14 @@ public class ManageContactTests extends BaseSuperMarket{
 		
 		LoginPageSM loginPageObj = new LoginPageSM(driver);
 		ManageContactPage manageContactObj = new ManageContactPage(driver);
+		
 		loginPageObj.enterUserName(userName);
 		loginPageObj.enterPassword(password);
 		loginPageObj.ClickOnSignIn();
 
 		manageContactObj.clickMoreInfo();
 		manageContactObj.clickEditContact();
+		
 		manageContactObj.updatePhoneNumber(phone);
 		manageContactObj.updateAddress(address);
 		manageContactObj.updateEmail(email);

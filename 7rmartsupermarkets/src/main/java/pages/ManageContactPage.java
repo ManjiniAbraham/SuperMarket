@@ -1,13 +1,18 @@
 package pages;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import utilities.PageUtility;
+import utilities.WaitUtility;
+
 public class ManageContactPage {
 	
 	public WebDriver driver;
+	public WaitUtility waitUtility;
 	
 	@FindBy(xpath="(//a[@href='https://groceryapp.uniqassosiates.com/admin/list-contact'])[2]")
 	WebElement manageContactMoreInfoLink;
@@ -62,6 +67,15 @@ public class ManageContactPage {
 		delioveryLimitInputField.sendKeys(limit);
 	}
 	public void clickOnUpdateButton() {
+		// wait until clickable
+		WaitUtility waitUtilityObj = new WaitUtility();
+		waitUtilityObj.waitForElementToBeClickable(driver, updateButton);
+
+		// scroll into view
+		PageUtility pageutilityObj = new PageUtility();
+		pageutilityObj.scrollIntoView(driver, updateButton);
+		
+		//scrollIntoView(driver, updateButton);
 		updateButton.click();
 	}
 	public void clickOnResetButton() {

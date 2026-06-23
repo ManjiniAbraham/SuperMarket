@@ -87,6 +87,10 @@ public class PageUtility //helper class. repeated methods reusability
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].value='value';", elementName);
 	}
+	public void scrollIntoView(WebDriver driver, WebElement element) {
+	    JavascriptExecutor js = (JavascriptExecutor) driver;
+	    js.executeScript("arguments[0].scrollIntoView(true);", element);
+	}
 	
 	//========================================================================================================
 	
