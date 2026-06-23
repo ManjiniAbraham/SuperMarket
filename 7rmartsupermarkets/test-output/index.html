@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-testng" class="navigator-link">
-              <span class="suite-name border-passed">testng</span>
+              <span class="suite-name border-failed">testng</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -60,7 +60,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="group-testng" class="navigator-link ">
-                    <span>0 groups</span>
+                    <span>1 group</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,40 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">11 methods, 1 failed,  2 skipped,  8 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-testng" class="hide-methods failed suite-testng"> (hide)</a> <!-- hide-methods failed suite-testng -->
+                      <a href="#" panel-name="suite-testng" class="show-methods failed suite-testng"> (show)</a> <!-- show-methods failed suite-testng -->
+                    </span>
+                    <div class="method-list-content failed suite-testng">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-testng" title="testscripts.ManageCategoryTests" class="method navigator-link" hash-for-method="addCategorySuccessfully">addCategorySuccessfully</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-testng -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Retried methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-testng" class="hide-methods skipped suite-testng"> (hide)</a> <!-- hide-methods skipped suite-testng -->
+                      <a href="#" panel-name="suite-testng" class="show-methods skipped suite-testng"> (show)</a> <!-- show-methods skipped suite-testng -->
+                    </span>
+                    <div class="method-list-content skipped suite-testng">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-testng" title="testscripts.ManageCategoryTests" class="method navigator-link" hash-for-method="addCategorySuccessfully">addCategorySuccessfully</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-testng" title="testscripts.ManageCategoryTests" class="method navigator-link" hash-for-method="addCategorySuccessfully">addCategorySuccessfully</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-testng -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,7 +136,42 @@
                     <div class="method-list-content passed suite-testng">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-testng" title="testscripts.ManageFooterTests" class="method navigator-link" hash-for-method="verifyAddressUpdate">verifyAddressUpdate</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-testng" title="testscripts.ManageNewsTests" class="method navigator-link" hash-for-method="addNews">addNews</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-testng" title="testscripts.ManageNewsTests" class="method navigator-link" hash-for-method="cancelNews">cancelNews</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-testng" title="testscripts.ManageContactTests" class="method navigator-link" hash-for-method="editContactSuccessfully">editContactSuccessfully</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-testng" title="testscripts.LoginTestsSM" class="method navigator-link" hash-for-method="verifyLoginWithInvalidCredentials">verifyLoginWithInvalidCredentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-testng" title="testscripts.LoginTestsSM" class="method navigator-link" hash-for-method="verifyLoginWithInvalidPassword">verifyLoginWithInvalidPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-testng" title="testscripts.LoginTestsSM" class="method navigator-link" hash-for-method="verifyLoginWithInvalidUserName">verifyLoginWithInvalidUserName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-testng" title="testscripts.LoginTestsSM" class="method navigator-link" hash-for-method="verifyLoginWithValidCredentials">verifyLoginWithValidCredentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-testng" title="testscripts.LogoutTestsSM" class="method navigator-link" hash-for-method="verifyLogout">verifyLogout</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-testng -->
@@ -118,19 +186,233 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-testng" class="panel testng">
-          <div class="suite-testng-class-passed">
+          <div class="suite-testng-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">testscripts.ManageFooterTests</span>
+              <img src="failed.png"/>
+              <span class="class-name">testscripts.ManageCategoryTests</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyAddressUpdate">
-                  </a> <!-- verifyAddressUpdate -->
-                  <span class="method-name">verifyAddressUpdate</span>
+                  <a name="addCategorySuccessfully">
+                  </a> <!-- addCategorySuccessfully -->
+                  <span class="method-name">addCategorySuccessfully</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@onclick=&apos;click_button(1)&apos;]&quot;}
+  (Session info: chrome=149.0.7827.103)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: &apos;4.39.0&apos;, revision: &apos;126f156aee&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [97f6c309c1587a3cfd67896c9151327d, findElement {value=//a[@onclick=&apos;click_button(1)&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.103, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\manji\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64979}, goog:processID: 18108, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64979/devtoo..., se:cdpVersion: 149.0.7827.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 97f6c309c1587a3cfd67896c9151327d
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:384)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:378)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
+	at pages.ManageCategoryPage.clickToAddNewCategory(ManageCategoryPage.java:46)
+	at testscripts.ManageCategoryTests.addCategorySuccessfully(ManageCategoryTests.java:26)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
                   <em>
-(Verify update button functionality in Manage Footer Page)                  </em>
+(Verifying adding a new catefory in Manage Category Page)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-testng-class-failed -->
+          <div class="suite-testng-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">testscripts.ManageCategoryTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addCategorySuccessfully">
+                  </a> <!-- addCategorySuccessfully -->
+                  <span class="method-name">addCategorySuccessfully</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//i[contains(@class,&apos;fa-check&apos;)]&quot;}
+  (Session info: chrome=149.0.7827.103)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: &apos;4.39.0&apos;, revision: &apos;126f156aee&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [72cb238ba8ef304d183ccd3a1e62514e, findElement {value=//i[contains(@class,&apos;fa-check&apos;)], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.103, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\manji\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51174}, goog:processID: 51532, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51174/devtoo..., se:cdpVersion: 149.0.7827.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 72cb238ba8ef304d183ccd3a1e62514e
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:384)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:378)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.isDisplayed(Unknown Source)
+	at pages.ManageCategoryPage.isCategoryCreationSuccessful(ManageCategoryPage.java:71)
+	at testscripts.ManageCategoryTests.addCategorySuccessfully(ManageCategoryTests.java:32)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verifying adding a new catefory in Manage Category Page)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addCategorySuccessfully">
+                  </a> <!-- addCategorySuccessfully -->
+                  <span class="method-name">addCategorySuccessfully</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//i[contains(@class,&apos;fa-check&apos;)]&quot;}
+  (Session info: chrome=149.0.7827.103)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: &apos;4.39.0&apos;, revision: &apos;126f156aee&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0cc033998ef68db5478bdd1721db0626, findElement {value=//i[contains(@class,&apos;fa-check&apos;)], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.103, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\manji\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65377}, goog:processID: 53724, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65377/devtoo..., se:cdpVersion: 149.0.7827.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0cc033998ef68db5478bdd1721db0626
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:384)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:378)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.isDisplayed(Unknown Source)
+	at pages.ManageCategoryPage.isCategoryCreationSuccessful(ManageCategoryPage.java:71)
+	at testscripts.ManageCategoryTests.addCategorySuccessfully(ManageCategoryTests.java:32)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verifying adding a new catefory in Manage Category Page)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-testng-class-skipped -->
+          <div class="suite-testng-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testscripts.LoginTestsSM</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginWithInvalidCredentials">
+                  </a> <!-- verifyLoginWithInvalidCredentials -->
+                  <span class="method-name">verifyLoginWithInvalidCredentials</span>
+                  <em>
+(Verify Login with invalid credentials)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginWithInvalidPassword">
+                  </a> <!-- verifyLoginWithInvalidPassword -->
+                  <span class="method-name">verifyLoginWithInvalidPassword</span>
+                  <em>
+(Verify Login with valid username and invalid password)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginWithInvalidUserName">
+                  </a> <!-- verifyLoginWithInvalidUserName -->
+                  <span class="method-name">verifyLoginWithInvalidUserName</span>
+                  <em>
+(Verify Login with invalid user name and valid password)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginWithValidCredentials">
+                  </a> <!-- verifyLoginWithValidCredentials -->
+                  <span class="method-name">verifyLoginWithValidCredentials</span>
+                  <em>
+(Verify Login with valid credentials)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-testng-class-passed -->
+          <div class="suite-testng-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testscripts.LogoutTestsSM</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLogout">
+                  </a> <!-- verifyLogout -->
+                  <span class="method-name">verifyLogout</span>
+                  <em>
+(Verify logout functionality)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-testng-class-passed -->
+          <div class="suite-testng-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testscripts.ManageContactTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="editContactSuccessfully">
+                  </a> <!-- editContactSuccessfully -->
+                  <span class="method-name">editContactSuccessfully</span>
+                  <em>
+(Verifying editing a contact in Manage Contact Page)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-testng-class-passed -->
+          <div class="suite-testng-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testscripts.ManageNewsTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addNews">
+                  </a> <!-- addNews -->
+                  <span class="method-name">addNews</span>
+                  <em>
+(Verify adding new NEWS in Manage News Page)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="cancelNews">
+                  </a> <!-- cancelNews -->
+                  <span class="method-name">cancelNews</span>
+                  <em>
+(Verifying cancel button functionality in the Manage News page)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -148,12 +430,16 @@
   &lt;listeners&gt;
     &lt;listener class-name=&quot;generateReport.Listeners&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Edge&quot;&gt;
-    &lt;parameter name=&quot;browser&quot; value=&quot;Edge&quot;/&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;ChromeTest&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;Chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testscripts.ManageFooterTests&quot;/&gt;
+      &lt;class name=&quot;testscripts.LogoutTestsSM&quot;/&gt;
+      &lt;class name=&quot;testscripts.ManageNewsTests&quot;/&gt;
+      &lt;class name=&quot;testscripts.LoginTestsSM&quot;/&gt;
+      &lt;class name=&quot;testscripts.ManageContactTests&quot;/&gt;
+      &lt;class name=&quot;testscripts.ManageCategoryTests&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Edge --&gt;
+  &lt;/test&gt; &lt;!-- ChromeTest --&gt;
 &lt;/suite&gt; &lt;!-- testng --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -165,7 +451,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Edge (1 class)</span>
+                <span class="test-name">ChromeTest (5 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -175,6 +461,18 @@
             <span class="header-content">Groups for testng</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">Regression</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyLoginWithValidCredentials</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyLogout</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-testng" class="panel">
@@ -191,16 +489,56 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(11);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyAddressUpdate')
-data.setCell(0, 2, 'testscripts.ManageFooterTests')
-data.setCell(0, 3, 4830);
+data.setCell(0, 1, 'addCategorySuccessfully')
+data.setCell(0, 2, 'testscripts.ManageCategoryTests')
+data.setCell(0, 3, 12086);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'addCategorySuccessfully')
+data.setCell(1, 2, 'testscripts.ManageCategoryTests')
+data.setCell(1, 3, 10038);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'addCategorySuccessfully')
+data.setCell(2, 2, 'testscripts.ManageCategoryTests')
+data.setCell(2, 3, 8898);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'editContactSuccessfully')
+data.setCell(3, 2, 'testscripts.ManageContactTests')
+data.setCell(3, 3, 4743);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'addNews')
+data.setCell(4, 2, 'testscripts.ManageNewsTests')
+data.setCell(4, 3, 3863);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'cancelNews')
+data.setCell(5, 2, 'testscripts.ManageNewsTests')
+data.setCell(5, 3, 3519);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'verifyLogout')
+data.setCell(6, 2, 'testscripts.LogoutTestsSM')
+data.setCell(6, 3, 3268);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'verifyLoginWithValidCredentials')
+data.setCell(7, 2, 'testscripts.LoginTestsSM')
+data.setCell(7, 3, 1416);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'verifyLoginWithInvalidUserName')
+data.setCell(8, 2, 'testscripts.LoginTestsSM')
+data.setCell(8, 3, 740);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'verifyLoginWithInvalidCredentials')
+data.setCell(9, 2, 'testscripts.LoginTestsSM')
+data.setCell(9, 3, 738);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'verifyLoginWithInvalidPassword')
+data.setCell(10, 2, 'testscripts.LoginTestsSM')
+data.setCell(10, 3, 704);
 window.suiteTableData['testng']= { tableData: data, tableDiv: 'times-div-testng'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 seconds</span>
+              <span class="suite-total-time">Total running time: 50 seconds</span>
               <div id="times-div-testng">
               </div> <!-- times-div-testng -->
             </div> <!-- times-div -->
@@ -226,18 +564,152 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testscripts.ManageFooterTests</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testscripts.LogoutTestsSM</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">browserInitialization(Edge)</span>
+                <span class="method-name">browserInitialization(Chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verifyAddressUpdate</span>
-                <span class="method-start">4300 ms</span>
+                <span class="method-name">verifyLogout</span>
+                <span class="method-start">3518 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">browserQuit([TestResult name=verifyAddressUpdate status=SUCCESS method=ManageFooterTests.verifyAddressUpdate()[p...)</span>
-                <span class="method-start">9135 ms</span>
+                <span class="method-name">browserQuit([TestResult name=verifyLogout status=SUCCESS method=LogoutTestsSM.verifyLogout()[pri:0, instance:tes...)</span>
+                <span class="method-start">6793 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testscripts.ManageNewsTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">browserInitialization(Chrome)</span>
+                <span class="method-start">7025 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">addNews</span>
+                <span class="method-start">10037 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=addNews status=SUCCESS method=ManageNewsTests.addNews()[pri:0, instance:testscripts...)</span>
+                <span class="method-start">13901 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">browserInitialization(Chrome)</span>
+                <span class="method-start">14142 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">cancelNews</span>
+                <span class="method-start">17251 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=cancelNews status=SUCCESS method=ManageNewsTests.cancelNews()[pri:0, instance:tests...)</span>
+                <span class="method-start">20771 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testscripts.LoginTestsSM</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">browserInitialization(Chrome)</span>
+                <span class="method-start">21012 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginWithInvalidCredentials</span>
+                <span class="method-start">24054 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyLoginWithInvalidCredentials status=SUCCESS method=LoginTestsSM.verifyLoginWit...)</span>
+                <span class="method-start">24793 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">browserInitialization(Chrome)</span>
+                <span class="method-start">24996 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginWithInvalidPassword</span>
+                <span class="method-start">27990 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyLoginWithInvalidPassword status=SUCCESS method=LoginTestsSM.verifyLoginWithIn...)</span>
+                <span class="method-start">28696 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">browserInitialization(Chrome)</span>
+                <span class="method-start">28875 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginWithInvalidUserName</span>
+                <span class="method-start">31901 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyLoginWithInvalidUserName status=SUCCESS method=LoginTestsSM.verifyLoginWithIn...)</span>
+                <span class="method-start">32644 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">browserInitialization(Chrome)</span>
+                <span class="method-start">32843 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginWithValidCredentials</span>
+                <span class="method-start">35843 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyLoginWithValidCredentials status=SUCCESS method=LoginTestsSM.verifyLoginWithV...)</span>
+                <span class="method-start">37262 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testscripts.ManageContactTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">browserInitialization(Chrome)</span>
+                <span class="method-start">37459 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">editContactSuccessfully</span>
+                <span class="method-start">40438 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=editContactSuccessfully status=SUCCESS method=ManageContactTests.editContactSuccess...)</span>
+                <span class="method-start">45182 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testscripts.ManageCategoryTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">browserInitialization(Chrome)</span>
+                <span class="method-start">45382 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">addCategorySuccessfully</span>
+                <span class="method-start">48358 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=addCategorySuccessfully status=SKIP method=ManageCategoryTests.addCategorySuccessfu...)</span>
+                <span class="method-start">57260 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">browserInitialization(Chrome)</span>
+                <span class="method-start">57480 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">addCategorySuccessfully</span>
+                <span class="method-start">60434 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=addCategorySuccessfully status=SKIP method=ManageCategoryTests.addCategorySuccessfu...)</span>
+                <span class="method-start">70474 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">browserInitialization(Chrome)</span>
+                <span class="method-start">71653 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">addCategorySuccessfully</span>
+                <span class="method-start">74592 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=addCategorySuccessfully status=FAILURE method=ManageCategoryTests.addCategorySucces...)</span>
+                <span class="method-start">86684 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

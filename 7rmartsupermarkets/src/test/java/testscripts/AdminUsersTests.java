@@ -86,7 +86,7 @@ public class AdminUsersTests extends BaseSuperMarket{
 		Assert.assertTrue(userCreated);
 }
 	
-@Test(retryAnalyzer=retry.Retry.class, description="Adding new user , type Partner")
+@Test(description="Adding new user , type Partner")
 	
 	public void addNewUserTypePartner() throws IOException 
 	{
@@ -119,7 +119,7 @@ public class AdminUsersTests extends BaseSuperMarket{
 		boolean userCreated= adminPageObj.isUserCreatedSuccessfylly();
 		Assert.assertTrue(userCreated);
 }
-@Test(retryAnalyzer=retry.Retry.class, description="Adding new user , type Delivery Boy")
+@Test(description="Adding new user , type Delivery Boy")
 
 public void addNewUserTypeDeliveryBoy() throws IOException 
 {
