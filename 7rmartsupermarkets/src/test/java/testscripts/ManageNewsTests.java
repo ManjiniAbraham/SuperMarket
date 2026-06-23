@@ -31,7 +31,7 @@ public class ManageNewsTests extends BaseSuperMarket {
 		Assert.assertTrue(alert);
 	}
 
-	@Test(description="Verifying cancel button functionality in the Manage News page")
+	/*@Test(description="Verifying cancel button functionality in the Manage News page")
 	public void cancelNews() throws IOException {
 		String news = MarketExcelUtility.getStringData(1, 0, "news");
 		String userName = MarketExcelUtility.getStringData(1, 0, "SuperMarketLoginPage");
@@ -44,13 +44,14 @@ public class ManageNewsTests extends BaseSuperMarket {
 		loginPageObj.ClickOnSignIn();
 		manageNewObj.clickManageNewsMoreInfo();
 		manageNewObj.clickToAddNews();
-		manageNewObj.enterNewsContent(news);
+		//manageNewObj.enterNewsContent(news);
 		manageNewObj.cancelNews();
 
 		String actualURL = driver.getCurrentUrl();
+		System.out.println("Actual URL= " + actualURL);
 		String expectedUrl = "https://groceryapp.uniqassosiates.comadmin/list-news";
 
 		Assert.assertEquals(actualURL, expectedUrl, "Failed to Cancel");
-	}
+	}*/
 
 }

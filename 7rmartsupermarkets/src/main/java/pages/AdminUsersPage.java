@@ -38,11 +38,14 @@ public class AdminUsersPage
 	}
 	public void enterUserName(String userName) 
 	{
+		enterUserName.clear();
 		enterUserName.sendKeys(userName);
 	}
 	public void enterPassword(String password) 
 	{
+		enterPassword.clear();
 		enterPassword.sendKeys(password);
+		
 	}
 	public void selectUserType() 
 	{
