@@ -11,7 +11,7 @@ import utilities.MarketExcelUtility;
 
 public class ManageNewsTests extends BaseSuperMarket {
 
-	@Test(retryAnalyzer=retry.Retry.class,description="Verify adding new NEWS in Manage News Page")
+	@Test(description="Verify adding new NEWS in Manage News Page")
 	public void addNews() throws IOException {
 		String news = MarketExcelUtility.getStringData(1, 0, "news");
 		String userName = MarketExcelUtility.getStringData(1, 0, "SuperMarketLoginPage");

@@ -51,7 +51,7 @@ public class AdminUsersTests extends BaseSuperMarket{
 		Assert.assertTrue(userCreated);
 }
 	
-	@Test(retryAnalyzer=retry.Retry.class, description="Adding new user , type Admin")
+	@Test(description="Adding new user , type Admin")
 	
 	public void addNewUserTypeAdmin() throws IOException 
 	{
@@ -153,7 +153,7 @@ public void addNewUserTypeDeliveryBoy() throws IOException
 	Assert.assertTrue(userCreated);
 }
 
-@Test(retryAnalyzer=retry.Retry.class, description="Adding existing User")
+@Test(description="Adding existing User")
 public void addAlreadyExistingUser() throws IOException 
 {
 	String adminUserName = MarketExcelUtility.getStringData(1, 0, "adminusers");

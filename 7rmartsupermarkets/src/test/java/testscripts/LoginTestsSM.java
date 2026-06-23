@@ -9,7 +9,7 @@ import pages.LoginPageSM;
 import utilities.MarketExcelUtility;
 
 public class LoginTestsSM extends BaseSuperMarket {
-	@Test(retryAnalyzer=retry.Retry.class,description="Verify Login with valid credentials",groups= {"Regression"})
+	@Test(description="Verify Login with valid credentials",groups= {"Regression"})
 	public void verifyLoginWithValidCredentials() throws IOException {
 		String userName = MarketExcelUtility.getStringData(1, 0, "SuperMarketLoginPage");
 		String password = MarketExcelUtility.getStringData(1, 1, "SuperMarketLoginPage");
@@ -24,7 +24,7 @@ public class LoginTestsSM extends BaseSuperMarket {
 		Assert.assertTrue(homepage);
 	}
 
-	@Test(retryAnalyzer=retry.Retry.class,description="Verify Login with invalid credentials")
+	@Test(description="Verify Login with invalid credentials")
 	public void verifyLoginWithInvalidCredentials() throws IOException {
 		String userName = MarketExcelUtility.getStringData(2, 0, "SuperMarketLoginPage");
 		String password = MarketExcelUtility.getStringData(2, 1, "SuperMarketLoginPage");
@@ -38,7 +38,7 @@ public class LoginTestsSM extends BaseSuperMarket {
 		Assert.assertTrue(loginAlert);
 	}
 
-	@Test(retryAnalyzer=retry.Retry.class,description="Verify Login with invalid user name and valid password")
+	@Test(description="Verify Login with invalid user name and valid password")
 	public void verifyLoginWithInvalidUserName() throws IOException {
 		String userName = MarketExcelUtility.getStringData(3, 0, "SuperMarketLoginPage");
 		String password = MarketExcelUtility.getStringData(3, 1, "SuperMarketLoginPage");
@@ -52,7 +52,7 @@ public class LoginTestsSM extends BaseSuperMarket {
 		Assert.assertTrue(loginAlert);
 	}
 
-	@Test(retryAnalyzer=retry.Retry.class,description="Verify Login with valid username and invalid password")
+	@Test(description="Verify Login with valid username and invalid password")
 	public void verifyLoginWithInvalidPassword() throws IOException {
 		String userName = MarketExcelUtility.getStringData(4, 0, "SuperMarketLoginPage");
 		String password = MarketExcelUtility.getStringData(4, 1, "SuperMarketLoginPage");

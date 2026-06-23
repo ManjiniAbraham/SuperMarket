@@ -12,7 +12,7 @@ import utilities.MarketExcelUtility;
 
 public class ManageFooterTests extends BaseSuperMarket {
 
-	@Test(retryAnalyzer=retry.Retry.class,description="Verify update button functionality in Manage Footer Page")
+	@Test(description="Verify update button functionality in Manage Footer Page")
 	public void verifyAddressUpdate() throws IOException {
 		String address = MarketExcelUtility.getStringData(1, 0, "managefootersheet");
 		String email = MarketExcelUtility.getStringData(1, 1, "managefootersheet");
