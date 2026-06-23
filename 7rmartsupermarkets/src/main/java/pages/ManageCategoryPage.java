@@ -46,8 +46,9 @@ public class ManageCategoryPage {
 		manageCategoryNewButton.click();
 	}
 	
-	public void giveCategoryName() {
-		categoryuInputField.sendKeys("Jewelry");
+	public void giveCategoryName(String categoryName) {
+		categoryuInputField.sendKeys(categoryName);
+		
 	}
 	
 	public void selectDiscountGroup() {

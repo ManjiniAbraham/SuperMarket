@@ -7,6 +7,7 @@ import org.testng.annotations.Test;
 
 import pages.LoginPageSM;
 import pages.ManageCategoryPage;
+import utilities.FakerUtility;
 import utilities.MarketExcelUtility;
 
 public class ManageCategoryTests extends BaseSuperMarket {
@@ -15,16 +16,22 @@ public class ManageCategoryTests extends BaseSuperMarket {
 
 		String userName = MarketExcelUtility.getStringData(1, 0, "SuperMarketLoginPage");
 		String password = MarketExcelUtility.getStringData(1, 1, "SuperMarketLoginPage");
+		
+
+		FakerUtility fakerObj = new FakerUtility();
+		String catName = fakerObj.creatARandomFirstName();
 
 		LoginPageSM loginPageObj = new LoginPageSM(driver);
 		ManageCategoryPage manageCategoryObj = new ManageCategoryPage(driver);
+
 		loginPageObj.enterUserName(userName);
 		loginPageObj.enterPassword(password);
 		loginPageObj.ClickOnSignIn();
 
 		manageCategoryObj.clickManageCategoryMoreInfo();
 		manageCategoryObj.clickToAddNewCategory();
-		manageCategoryObj.giveCategoryName();
+
+		manageCategoryObj.giveCategoryName(catName);
 		manageCategoryObj.selectDiscountGroup();
 		manageCategoryObj.chooseFile();
 		manageCategoryObj.save();

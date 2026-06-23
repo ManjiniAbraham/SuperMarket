@@ -30,7 +30,26 @@ public class Listeners implements ITestListener{
  		extentTest.get().log(Status.PASS, "Test Passed"); 
   
  	} 
- 	public void onTestFailure(ITestResult result) { 
+ 	
+ 	/*public void onTestFailure(ITestResult result) {
+
+ 	    extentTest.get().log(Status.FAIL, "Test Failed");
+ 	    extentTest.get().fail(result.getThrowable());
+
+ 	    ITestContext context = result.getTestContext();
+ 	    WebDriver driver = (WebDriver) context.getAttribute("driver");
+
+ 	    if (driver != null) {
+ 	        String testName = result.getMethod().getMethodName();
+
+ 	        // optional screenshot integration
+ 	        System.out.println("Failure captured for: " + testName);
+ 	    }
+ 	}*/
+ 	
+ 	public void onTestFailure(ITestResult result)
+ 	 { 
+ 	 
   
  		ITestListener.super.onTestFailure(result); 
  		extentTest.get().log(Status.FAIL, "Test Failed"); 
@@ -60,6 +79,7 @@ public class Listeners implements ITestListener{
  		} catch (Exception e) { 
  		} 
  	} 
+ 	
  public void onTestSkipped(ITestResult result) { 
  		ITestListener.super.onTestSkipped(result); 
  		extentTest.get().log(Status.SKIP, "Test Skipped"); 
