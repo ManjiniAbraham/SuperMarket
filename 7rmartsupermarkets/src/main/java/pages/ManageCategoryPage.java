@@ -70,7 +70,8 @@ public class ManageCategoryPage {
 	
 	public void save() {
 		waitUtilityObj.waitForElement(driver, saveButton);
-		saveButton.click();
+		pageUtilityObj.javaScriptClick(driver, saveButton);
+		//saveButton.click();
 		
 	}
 	
