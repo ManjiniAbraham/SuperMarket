@@ -4,12 +4,12 @@
 <listeners>
 <listener class-name="generateReport.Listeners"></listener>
 </listeners>
-  <test thread-count="5" name="Edge">
+  <test thread-count="5" name="FireFox">
   <parameter name="browser" value="Edge"></parameter>
     <classes>
       <class name="testscripts.ManageFooterTests"/>
-      <!--<class name="testscripts.AdminUsersTests"/>
-      <class name="testscripts.LogoutTestsSM"/>
+      <class name="testscripts.AdminUsersTests"/>
+      <!--<class name="testscripts.LogoutTestsSM"/>
       <class name="testscripts.ManageNewsTests"/>
       <class name="testscripts.LoginTestsSM"/>
       <class name="testscripts.ManageContactTests"/>
