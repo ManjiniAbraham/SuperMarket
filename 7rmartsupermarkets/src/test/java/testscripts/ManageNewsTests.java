@@ -31,7 +31,7 @@ public class ManageNewsTests extends BaseSuperMarket {
 		Assert.assertTrue(alert);
 	}
 
-	@Test(retryAnalyzer=retry.Retry.class,description="Verifying cancel button functionality in the Manage News page")
+	@Test(description="Verifying cancel button functionality in the Manage News page")
 	public void cancelNews() throws IOException {
 		String news = MarketExcelUtility.getStringData(1, 0, "news");
 		String userName = MarketExcelUtility.getStringData(1, 0, "SuperMarketLoginPage");
