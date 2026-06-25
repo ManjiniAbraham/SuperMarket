@@ -1,29 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="CrossbrowserTesting">
-  <test thread-count="5" name="FireFoxTest">
-  <parameter name="browser" value="Edge"></parameter>
-    <classes>
-      <class name="testscripts.ManageFooterTests"/>
-      <class name="testscripts.AdminUsersTests"/>
-      <class name="testscripts.LogoutTestsSM"/>
-      <class name="testscripts.ManageNewsTests"/>
-      <class name="testscripts.LoginTestsSM"/>
-      <class name="testscripts.ManageContactTests"/>
-      <class name="testscripts.ManageCategoryTests"/>
-    </classes>
-  </test> <!-- Test -->
-  
-  <test thread-count="5" name="EdgeTest">
-  <parameter name="browser" value="FireFox"></parameter>
-    <classes>
-      <!--class name="testscripts.ManageFooterTests"/>
+	<test thread-count="5" name="FireFoxTest">
+		<parameter name="browser" value="Edge"></parameter>
+		<classes>
+			<class name="testscripts.ManageFooterTests" />
+			<class name="testscripts.AdminUsersTests" />
+			<class name="testscripts.LogoutTestsSM" />
+			<class name="testscripts.ManageNewsTests" />
+			<class name="testscripts.LoginTestsSM" />
+			<class name="testscripts.ManageContactTests" />
+			<class name="testscripts.ManageCategoryTests" />
+		</classes>
+	</test> <!--
+	Test -->
+
+	<test thread-count="5" name="EdgeTest">
+		<parameter name="browser" value="FireFox"></parameter>
+		<classes>
+			<!--class name="testscripts.ManageFooterTests"/>
       <class name="testscripts.AdminUsersTests"/>
       <class name="testscripts.LogoutTestsSM"/>
       <class name="testscripts.ManageNewsTests"/>
       <class name="testscripts.LoginTestsSM"/>
       <class name="testscripts.ManageContactTests"/>
       <class name="testscripts.ManageCategoryTests"/-->
-    </classes>
-  </test> <!-- Test -->
+		</classes>
+	</test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -5,18 +5,18 @@ import java.io.IOException;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import constant.MarketConstant;
 import pages.LoginPageSM;
 import pages.ManageFooterPage;
 import utilities.MarketExcelUtility;
 
-
 public class ManageFooterTests extends BaseSuperMarket {
 
-	@Test(description="Verify update button functionality in Manage Footer Page")
+	@Test(description = "Verify update button functionality in Manage Footer Page")
 	public void verifyAddressUpdate() throws IOException {
 		String address = MarketExcelUtility.getStringData(1, 0, "managefootersheet");
 		String email = MarketExcelUtility.getStringData(1, 1, "managefootersheet");
-		String phone= MarketExcelUtility.getIntegerData(1,2, "managefootersheet");
+		String phone = MarketExcelUtility.getIntegerData(1, 2, "managefootersheet");
 
 		String userName = MarketExcelUtility.getStringData(1, 0, "SuperMarketLoginPage");
 		String password = MarketExcelUtility.getStringData(1, 1, "SuperMarketLoginPage");
@@ -41,7 +41,7 @@ public class ManageFooterTests extends BaseSuperMarket {
 		manageFooterObj.clickUpdateButton();
 
 		boolean updated = manageFooterObj.addressUpdatedSuccessfully();
-		Assert.assertTrue(updated);
+		Assert.assertTrue(updated, MarketConstant.UPDATEBUTTONVALIDATION);
 
 	}
 }

@@ -5,6 +5,7 @@ import java.io.IOException;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import constant.MarketConstant;
 import pages.LoginPageSM;
 import pages.ManageCategoryPage;
 import utilities.FakerUtility;
@@ -16,7 +17,6 @@ public class ManageCategoryTests extends BaseSuperMarket {
 
 		String userName = MarketExcelUtility.getStringData(1, 0, "SuperMarketLoginPage");
 		String password = MarketExcelUtility.getStringData(1, 1, "SuperMarketLoginPage");
-		
 
 		FakerUtility fakerObj = new FakerUtility();
 		String catName = fakerObj.creatARandomFirstName();
@@ -36,7 +36,7 @@ public class ManageCategoryTests extends BaseSuperMarket {
 		manageCategoryObj.chooseFile();
 		manageCategoryObj.save();
 
-		Assert.assertTrue(manageCategoryObj.isCategoryCreationSuccessful());
+		Assert.assertTrue(manageCategoryObj.isCategoryCreationSuccessful(), MarketConstant.ADDINGNEWCATEGORY);
 
 	}
 

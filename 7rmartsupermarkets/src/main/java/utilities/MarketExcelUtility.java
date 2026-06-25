@@ -13,29 +13,29 @@ import constant.MarketConstant;
 public class MarketExcelUtility {
 	static FileInputStream f;
 	static XSSFWorkbook wb;
-	static XSSFSheet   sh;
-	
-	
-	public static String getStringData(int a,int b, String sheet) throws IOException 
-	{
-		f=new FileInputStream(MarketConstant.TESTDATAFILE);
-		wb= new XSSFWorkbook(f);
-		sh=wb.getSheet(sheet);// to get the details from the sheet in the workbook
-		XSSFRow r =sh.getRow(a); // to get the details from the row in a sheet. since we haven't initialized it earlier, doing it here.
+	static XSSFSheet sh;
+
+	public static String getStringData(int a, int b, String sheet) throws IOException {
+		f = new FileInputStream(MarketConstant.TESTDATAFILE);
+		wb = new XSSFWorkbook(f);
+		sh = wb.getSheet(sheet);// to get the details from the sheet in the workbook
+		XSSFRow r = sh.getRow(a); // to get the details from the row in a sheet. since we haven't initialized it
+									// earlier, doing it here.
 		XSSFCell c = r.getCell(b); // to get the details from a cell within a row.
 		return c.getStringCellValue();// to get the value of a string (string value)from a cell.
 	}
-	
-	public static String getIntegerData(int a,int b, String sheet) throws IOException 
-	{
-		f=new FileInputStream(MarketConstant.TESTDATAFILE);
-		wb= new XSSFWorkbook(f);
-		sh=wb.getSheet(sheet);// to get the details from the sheet in the workbook
-		XSSFRow r =sh.getRow(a); // to get the details from the row in a sheet. since we haven't initialized it earlier, doing it here.
+
+	public static String getIntegerData(int a, int b, String sheet) throws IOException {
+		f = new FileInputStream(MarketConstant.TESTDATAFILE);
+		wb = new XSSFWorkbook(f);
+		sh = wb.getSheet(sheet);// to get the details from the sheet in the workbook
+		XSSFRow r = sh.getRow(a); // to get the details from the row in a sheet. since we haven't initialized it
+									// earlier, doing it here.
 		XSSFCell c = r.getCell(b); // to get the details from a cell within a row.
-		int az = (int)c.getNumericCellValue();
+		int az = (int) c.getNumericCellValue();
 		return String.valueOf(az);
-		//return c.getStringCellValue();// to get the value of a string (string value)from a cell.
+		// return c.getStringCellValue();// to get the value of a string (string
+		// value)from a cell.
 	}
 
 }

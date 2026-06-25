@@ -42,16 +42,13 @@ public class BaseSuperMarket {
 			// drivers. For eg, if you want to open Edge browser give EdgeDriver instead of
 			// ChromeDriver.
 			// driver is the reference variable.
-		} 
-		else if (browser.equalsIgnoreCase("Chrome")) {
+		} else if (browser.equalsIgnoreCase("Chrome")) {
 			driver = new ChromeDriver();
 
-		} 
-		else if (browser.equalsIgnoreCase("FireFox")) {
+		} else if (browser.equalsIgnoreCase("FireFox")) {
 			driver = new FirefoxDriver();
 
-		} 
-		else {
+		} else {
 			throw new Exception("Invalid");
 		}
 
@@ -61,7 +58,7 @@ public class BaseSuperMarket {
 		// Syntax for implicit wait is
 		// driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(0));
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(WaitUtility.IMPLICITWAIT));
-	
+
 	}
 
 	@AfterMethod(alwaysRun = true)
