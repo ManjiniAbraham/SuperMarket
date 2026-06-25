@@ -9,6 +9,8 @@ import utilities.PageUtility;
 
 public class AdminUsersPage {
 	public WebDriver driver;
+	PageUtility pageUtilityObj = new PageUtility();
+
 	@FindBy(xpath = "(//a[@href='https://groceryapp.uniqassosiates.com/admin/list-admin'])[2]")
 	WebElement adminUsersMoreInfo;
 	@FindBy(xpath = "//a[@onclick='click_button(1)']")
@@ -35,6 +37,7 @@ public class AdminUsersPage {
 
 	public void clickOnNewUsersMoreInfo() {
 		adminUsersMoreInfo.click();
+		pageUtilityObj.acceptSimpleAlert(driver);
 	}
 
 	public void createNewUsers() {
@@ -63,6 +66,7 @@ public class AdminUsersPage {
 
 	public void saveNewUser() {
 		newUserSaveButton.click();
+		pageUtilityObj.acceptSimpleAlert(driver);
 	}
 
 	public void resetNewUser() {

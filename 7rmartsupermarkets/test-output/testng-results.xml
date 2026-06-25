@@ -1,73 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="14" passed="14" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-06-23T16:43:14 EDT" name="testng" finished-at="2026-06-23T16:45:33 EDT" duration-ms="138939">
+  <suite started-at="2026-06-25T13:08:42 EDT" name="testng" finished-at="2026-06-25T13:10:00 EDT" duration-ms="78269">
     <groups>
-      <group name="Regression">
-        <method signature="LoginTestsSM.verifyLoginWithValidCredentials()[pri:0, instance:testscripts.LoginTestsSM@7098b907]" name="verifyLoginWithValidCredentials" class="testscripts.LoginTestsSM"/>
-        <method signature="LogoutTestsSM.verifyLogout()[pri:0, instance:testscripts.LogoutTestsSM@a8ef162]" name="verifyLogout" class="testscripts.LogoutTestsSM"/>
-      </group> <!-- Regression -->
     </groups>
-    <test started-at="2026-06-23T16:43:14 EDT" name="FFTest" finished-at="2026-06-23T16:45:33 EDT" duration-ms="138939">
-      <class name="testscripts.ManageContactTests">
-        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscripts.ManageContactTests@7fd7a283]" started-at="2026-06-23T16:44:59 EDT" name="browserInitialization" finished-at="2026-06-23T16:45:06 EDT" duration-ms="6556" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[FireFox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserInitialization -->
-        <test-method signature="editContactSuccessfully()[pri:0, instance:testscripts.ManageContactTests@7fd7a283]" started-at="2026-06-23T16:45:06 EDT" name="editContactSuccessfully" description="Verifying editing a contact in Manage Contact Page" finished-at="2026-06-23T16:45:09 EDT" duration-ms="3802" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- editContactSuccessfully -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testscripts.ManageContactTests@7fd7a283]" started-at="2026-06-23T16:45:10 EDT" name="browserQuit" finished-at="2026-06-23T16:45:11 EDT" duration-ms="1421" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=editContactSuccessfully status=SUCCESS method=ManageContactTests.editContactSuccessfully()[pri:0, instance:testscripts.ManageContactTests@7fd7a283] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserQuit -->
-      </class> <!-- testscripts.ManageContactTests -->
-      <class name="testscripts.ManageFooterTests">
-        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscripts.ManageFooterTests@78fa769e]" started-at="2026-06-23T16:45:23 EDT" name="browserInitialization" finished-at="2026-06-23T16:45:29 EDT" duration-ms="5838" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[FireFox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserInitialization -->
-        <test-method signature="verifyAddressUpdate()[pri:0, instance:testscripts.ManageFooterTests@78fa769e]" started-at="2026-06-23T16:45:29 EDT" name="verifyAddressUpdate" description="Verify update button functionality in Manage Footer Page" finished-at="2026-06-23T16:45:32 EDT" duration-ms="2906" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAddressUpdate -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testscripts.ManageFooterTests@78fa769e]" started-at="2026-06-23T16:45:32 EDT" name="browserQuit" finished-at="2026-06-23T16:45:33 EDT" duration-ms="1046" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyAddressUpdate status=SUCCESS method=ManageFooterTests.verifyAddressUpdate()[pri:0, instance:testscripts.ManageFooterTests@78fa769e] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserQuit -->
-      </class> <!-- testscripts.ManageFooterTests -->
+    <test started-at="2026-06-25T13:08:42 EDT" name="FFTest" finished-at="2026-06-25T13:10:00 EDT" duration-ms="78269">
       <class name="testscripts.AdminUsersTests">
-        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscripts.AdminUsersTests@7ac296f6]" started-at="2026-06-23T16:44:05 EDT" name="browserInitialization" finished-at="2026-06-23T16:44:11 EDT" duration-ms="5853" status="PASS">
+        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscripts.AdminUsersTests@2fb0623e]" started-at="2026-06-25T13:08:42 EDT" name="browserInitialization" finished-at="2026-06-25T13:08:48 EDT" duration-ms="5446" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -78,22 +18,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserInitialization -->
-        <test-method signature="addAlreadyExistingUser()[pri:0, instance:testscripts.AdminUsersTests@7ac296f6]" started-at="2026-06-23T16:44:11 EDT" name="addAlreadyExistingUser" description="Adding existing User" finished-at="2026-06-23T16:44:15 EDT" duration-ms="4461" status="PASS">
+        <test-method signature="addAlreadyExistingUser()[pri:0, instance:testscripts.AdminUsersTests@2fb0623e]" started-at="2026-06-25T13:08:48 EDT" name="addAlreadyExistingUser" description="Adding existing User" finished-at="2026-06-25T13:08:52 EDT" duration-ms="4696" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addAlreadyExistingUser -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testscripts.AdminUsersTests@7ac296f6]" started-at="2026-06-23T16:44:15 EDT" name="browserQuit" finished-at="2026-06-23T16:44:17 EDT" duration-ms="1853" status="PASS">
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testscripts.AdminUsersTests@2fb0623e]" started-at="2026-06-25T13:08:52 EDT" name="browserQuit" finished-at="2026-06-25T13:08:53 EDT" duration-ms="1085" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=addAlreadyExistingUser status=SUCCESS method=AdminUsersTests.addAlreadyExistingUser()[pri:0, instance:testscripts.AdminUsersTests@7ac296f6] output={null}]]]>
+                <![CDATA[[TestResult name=addAlreadyExistingUser status=SUCCESS method=AdminUsersTests.addAlreadyExistingUser()[pri:0, instance:testscripts.AdminUsersTests@2fb0623e] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserQuit -->
-        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscripts.AdminUsersTests@7ac296f6]" started-at="2026-06-23T16:44:17 EDT" name="browserInitialization" finished-at="2026-06-23T16:44:23 EDT" duration-ms="6212" status="PASS">
+        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscripts.AdminUsersTests@2fb0623e]" started-at="2026-06-25T13:08:53 EDT" name="browserInitialization" finished-at="2026-06-25T13:08:58 EDT" duration-ms="4971" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -104,22 +44,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserInitialization -->
-        <test-method signature="addNewUserTypeAdmin()[pri:0, instance:testscripts.AdminUsersTests@7ac296f6]" started-at="2026-06-23T16:44:23 EDT" name="addNewUserTypeAdmin" description="Adding new user , type Admin" finished-at="2026-06-23T16:44:27 EDT" duration-ms="3585" status="PASS">
+        <test-method signature="addNewUserTypeAdmin()[pri:0, instance:testscripts.AdminUsersTests@2fb0623e]" started-at="2026-06-25T13:08:58 EDT" name="addNewUserTypeAdmin" description="Adding new user , type Admin" finished-at="2026-06-25T13:09:02 EDT" duration-ms="3220" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addNewUserTypeAdmin -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testscripts.AdminUsersTests@7ac296f6]" started-at="2026-06-23T16:44:27 EDT" name="browserQuit" finished-at="2026-06-23T16:44:28 EDT" duration-ms="1069" status="PASS">
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testscripts.AdminUsersTests@2fb0623e]" started-at="2026-06-25T13:09:02 EDT" name="browserQuit" finished-at="2026-06-25T13:09:03 EDT" duration-ms="1058" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=addNewUserTypeAdmin status=SUCCESS method=AdminUsersTests.addNewUserTypeAdmin()[pri:0, instance:testscripts.AdminUsersTests@7ac296f6] output={null}]]]>
+                <![CDATA[[TestResult name=addNewUserTypeAdmin status=SUCCESS method=AdminUsersTests.addNewUserTypeAdmin()[pri:0, instance:testscripts.AdminUsersTests@2fb0623e] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserQuit -->
-        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscripts.AdminUsersTests@7ac296f6]" started-at="2026-06-23T16:44:28 EDT" name="browserInitialization" finished-at="2026-06-23T16:44:34 EDT" duration-ms="6016" status="PASS">
+        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscripts.AdminUsersTests@2fb0623e]" started-at="2026-06-25T13:09:03 EDT" name="browserInitialization" finished-at="2026-06-25T13:09:07 EDT" duration-ms="4588" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -130,22 +70,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserInitialization -->
-        <test-method signature="addNewUserTypeDeliveryBoy()[pri:0, instance:testscripts.AdminUsersTests@7ac296f6]" started-at="2026-06-23T16:44:34 EDT" name="addNewUserTypeDeliveryBoy" description="Adding new user , type Delivery Boy" finished-at="2026-06-23T16:44:37 EDT" duration-ms="3198" status="PASS">
+        <test-method signature="addNewUserTypeDeliveryBoy()[pri:0, instance:testscripts.AdminUsersTests@2fb0623e]" started-at="2026-06-25T13:09:07 EDT" name="addNewUserTypeDeliveryBoy" description="Adding new user , type Delivery Boy" finished-at="2026-06-25T13:09:10 EDT" duration-ms="3217" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addNewUserTypeDeliveryBoy -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testscripts.AdminUsersTests@7ac296f6]" started-at="2026-06-23T16:44:37 EDT" name="browserQuit" finished-at="2026-06-23T16:44:38 EDT" duration-ms="1154" status="PASS">
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testscripts.AdminUsersTests@2fb0623e]" started-at="2026-06-25T13:09:10 EDT" name="browserQuit" finished-at="2026-06-25T13:09:11 EDT" duration-ms="1063" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=addNewUserTypeDeliveryBoy status=SUCCESS method=AdminUsersTests.addNewUserTypeDeliveryBoy()[pri:0, instance:testscripts.AdminUsersTests@7ac296f6] output={null}]]]>
+                <![CDATA[[TestResult name=addNewUserTypeDeliveryBoy status=SUCCESS method=AdminUsersTests.addNewUserTypeDeliveryBoy()[pri:0, instance:testscripts.AdminUsersTests@2fb0623e] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserQuit -->
-        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscripts.AdminUsersTests@7ac296f6]" started-at="2026-06-23T16:44:38 EDT" name="browserInitialization" finished-at="2026-06-23T16:44:44 EDT" duration-ms="6039" status="PASS">
+        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscripts.AdminUsersTests@2fb0623e]" started-at="2026-06-25T13:09:11 EDT" name="browserInitialization" finished-at="2026-06-25T13:09:16 EDT" duration-ms="4950" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -156,22 +96,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserInitialization -->
-        <test-method signature="addNewUserTypePartner()[pri:0, instance:testscripts.AdminUsersTests@7ac296f6]" started-at="2026-06-23T16:44:44 EDT" name="addNewUserTypePartner" description="Adding new user , type Partner" finished-at="2026-06-23T16:44:48 EDT" duration-ms="3256" status="PASS">
+        <test-method signature="addNewUserTypePartner()[pri:0, instance:testscripts.AdminUsersTests@2fb0623e]" started-at="2026-06-25T13:09:16 EDT" name="addNewUserTypePartner" description="Adding new user , type Partner" finished-at="2026-06-25T13:09:30 EDT" duration-ms="13482" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addNewUserTypePartner -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testscripts.AdminUsersTests@7ac296f6]" started-at="2026-06-23T16:44:48 EDT" name="browserQuit" finished-at="2026-06-23T16:44:49 EDT" duration-ms="1177" status="PASS">
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testscripts.AdminUsersTests@2fb0623e]" started-at="2026-06-25T13:09:30 EDT" name="browserQuit" finished-at="2026-06-25T13:09:31 EDT" duration-ms="974" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=addNewUserTypePartner status=SUCCESS method=AdminUsersTests.addNewUserTypePartner()[pri:0, instance:testscripts.AdminUsersTests@7ac296f6] output={null}]]]>
+                <![CDATA[[TestResult name=addNewUserTypePartner status=SUCCESS method=AdminUsersTests.addNewUserTypePartner()[pri:0, instance:testscripts.AdminUsersTests@2fb0623e] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserQuit -->
-        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscripts.AdminUsersTests@7ac296f6]" started-at="2026-06-23T16:44:49 EDT" name="browserInitialization" finished-at="2026-06-23T16:44:55 EDT" duration-ms="5679" status="PASS">
+        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscripts.AdminUsersTests@2fb0623e]" started-at="2026-06-25T13:09:31 EDT" name="browserInitialization" finished-at="2026-06-25T13:09:36 EDT" duration-ms="4885" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -182,15 +122,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserInitialization -->
-        <test-method signature="addNewUserTypeStaff()[pri:0, instance:testscripts.AdminUsersTests@7ac296f6]" started-at="2026-06-23T16:44:55 EDT" name="addNewUserTypeStaff" description="Adding new user , type Staff" finished-at="2026-06-23T16:44:58 EDT" duration-ms="3169" status="PASS">
+        <test-method signature="addNewUserTypeStaff()[pri:0, instance:testscripts.AdminUsersTests@2fb0623e]" started-at="2026-06-25T13:09:36 EDT" name="addNewUserTypeStaff" description="Adding new user , type Staff" finished-at="2026-06-25T13:09:59 EDT" duration-ms="23629" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addNewUserTypeStaff -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testscripts.AdminUsersTests@7ac296f6]" started-at="2026-06-23T16:44:58 EDT" name="browserQuit" finished-at="2026-06-23T16:44:59 EDT" duration-ms="1435" status="PASS">
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testscripts.AdminUsersTests@2fb0623e]" started-at="2026-06-25T13:09:59 EDT" name="browserQuit" finished-at="2026-06-25T13:10:00 EDT" duration-ms="961" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=addNewUserTypeStaff status=SUCCESS method=AdminUsersTests.addNewUserTypeStaff()[pri:0, instance:testscripts.AdminUsersTests@7ac296f6] output={null}]]]>
+                <![CDATA[[TestResult name=addNewUserTypeStaff status=SUCCESS method=AdminUsersTests.addNewUserTypeStaff()[pri:0, instance:testscripts.AdminUsersTests@2fb0623e] output={null}]]]>
               </value>
             </param>
           </params>
@@ -198,196 +138,6 @@
           </reporter-output>
         </test-method> <!-- browserQuit -->
       </class> <!-- testscripts.AdminUsersTests -->
-      <class name="testscripts.LogoutTestsSM">
-        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscripts.LogoutTestsSM@a8ef162]" started-at="2026-06-23T16:43:45 EDT" name="browserInitialization" finished-at="2026-06-23T16:43:51 EDT" duration-ms="5755" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[FireFox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserInitialization -->
-        <test-method signature="verifyLogout()[pri:0, instance:testscripts.LogoutTestsSM@a8ef162]" started-at="2026-06-23T16:43:51 EDT" name="verifyLogout" description="Verify logout functionality" finished-at="2026-06-23T16:43:53 EDT" duration-ms="2028" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLogout -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testscripts.LogoutTestsSM@a8ef162]" started-at="2026-06-23T16:43:53 EDT" name="browserQuit" finished-at="2026-06-23T16:43:54 EDT" duration-ms="1055" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyLogout status=SUCCESS method=LogoutTestsSM.verifyLogout()[pri:0, instance:testscripts.LogoutTestsSM@a8ef162] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserQuit -->
-      </class> <!-- testscripts.LogoutTestsSM -->
-      <class name="testscripts.LoginTestsSM">
-        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscripts.LoginTestsSM@7098b907]" started-at="2026-06-23T16:43:14 EDT" name="browserInitialization" finished-at="2026-06-23T16:43:19 EDT" duration-ms="5438" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[FireFox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserInitialization -->
-        <test-method signature="verifyLoginWithInvalidCredentials()[pri:0, instance:testscripts.LoginTestsSM@7098b907]" started-at="2026-06-23T16:43:19 EDT" name="verifyLoginWithInvalidCredentials" description="Verify Login with invalid credentials" finished-at="2026-06-23T16:43:20 EDT" duration-ms="1202" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginWithInvalidCredentials -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testscripts.LoginTestsSM@7098b907]" started-at="2026-06-23T16:43:20 EDT" name="browserQuit" finished-at="2026-06-23T16:43:22 EDT" duration-ms="1149" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyLoginWithInvalidCredentials status=SUCCESS method=LoginTestsSM.verifyLoginWithInvalidCredentials()[pri:0, instance:testscripts.LoginTestsSM@7098b907] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserQuit -->
-        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscripts.LoginTestsSM@7098b907]" started-at="2026-06-23T16:43:22 EDT" name="browserInitialization" finished-at="2026-06-23T16:43:28 EDT" duration-ms="6145" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[FireFox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserInitialization -->
-        <test-method signature="verifyLoginWithInvalidPassword()[pri:0, instance:testscripts.LoginTestsSM@7098b907]" started-at="2026-06-23T16:43:28 EDT" name="verifyLoginWithInvalidPassword" description="Verify Login with valid username and invalid password" finished-at="2026-06-23T16:43:28 EDT" duration-ms="600" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginWithInvalidPassword -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testscripts.LoginTestsSM@7098b907]" started-at="2026-06-23T16:43:28 EDT" name="browserQuit" finished-at="2026-06-23T16:43:29 EDT" duration-ms="1156" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyLoginWithInvalidPassword status=SUCCESS method=LoginTestsSM.verifyLoginWithInvalidPassword()[pri:0, instance:testscripts.LoginTestsSM@7098b907] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserQuit -->
-        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscripts.LoginTestsSM@7098b907]" started-at="2026-06-23T16:43:29 EDT" name="browserInitialization" finished-at="2026-06-23T16:43:35 EDT" duration-ms="5924" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[FireFox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserInitialization -->
-        <test-method signature="verifyLoginWithInvalidUserName()[pri:0, instance:testscripts.LoginTestsSM@7098b907]" started-at="2026-06-23T16:43:35 EDT" name="verifyLoginWithInvalidUserName" description="Verify Login with invalid user name and valid password" finished-at="2026-06-23T16:43:36 EDT" duration-ms="577" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginWithInvalidUserName -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testscripts.LoginTestsSM@7098b907]" started-at="2026-06-23T16:43:36 EDT" name="browserQuit" finished-at="2026-06-23T16:43:37 EDT" duration-ms="1073" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyLoginWithInvalidUserName status=SUCCESS method=LoginTestsSM.verifyLoginWithInvalidUserName()[pri:0, instance:testscripts.LoginTestsSM@7098b907] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserQuit -->
-        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscripts.LoginTestsSM@7098b907]" started-at="2026-06-23T16:43:37 EDT" name="browserInitialization" finished-at="2026-06-23T16:43:43 EDT" duration-ms="5726" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[FireFox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserInitialization -->
-        <test-method signature="verifyLoginWithValidCredentials()[pri:0, instance:testscripts.LoginTestsSM@7098b907]" started-at="2026-06-23T16:43:43 EDT" name="verifyLoginWithValidCredentials" description="Verify Login with valid credentials" finished-at="2026-06-23T16:43:44 EDT" duration-ms="1290" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginWithValidCredentials -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testscripts.LoginTestsSM@7098b907]" started-at="2026-06-23T16:43:44 EDT" name="browserQuit" finished-at="2026-06-23T16:43:45 EDT" duration-ms="1086" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyLoginWithValidCredentials status=SUCCESS method=LoginTestsSM.verifyLoginWithValidCredentials()[pri:0, instance:testscripts.LoginTestsSM@7098b907] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserQuit -->
-      </class> <!-- testscripts.LoginTestsSM -->
-      <class name="testscripts.ManageNewsTests">
-        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscripts.ManageNewsTests@2eea88a1]" started-at="2026-06-23T16:43:54 EDT" name="browserInitialization" finished-at="2026-06-23T16:44:01 EDT" duration-ms="6545" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[FireFox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserInitialization -->
-        <test-method signature="addNews()[pri:0, instance:testscripts.ManageNewsTests@2eea88a1]" started-at="2026-06-23T16:44:01 EDT" name="addNews" description="Verify adding new NEWS in Manage News Page" finished-at="2026-06-23T16:44:04 EDT" duration-ms="3249" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addNews -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testscripts.ManageNewsTests@2eea88a1]" started-at="2026-06-23T16:44:04 EDT" name="browserQuit" finished-at="2026-06-23T16:44:05 EDT" duration-ms="1192" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=addNews status=SUCCESS method=ManageNewsTests.addNews()[pri:0, instance:testscripts.ManageNewsTests@2eea88a1] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserQuit -->
-      </class> <!-- testscripts.ManageNewsTests -->
-      <class name="testscripts.ManageCategoryTests">
-        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscripts.ManageCategoryTests@22f59fa]" started-at="2026-06-23T16:45:11 EDT" name="browserInitialization" finished-at="2026-06-23T16:45:16 EDT" duration-ms="5556" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[FireFox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserInitialization -->
-        <test-method signature="addCategorySuccessfully()[pri:0, instance:testscripts.ManageCategoryTests@22f59fa]" started-at="2026-06-23T16:45:16 EDT" name="addCategorySuccessfully" description="Verifying adding a new catefory in Manage Category Page" finished-at="2026-06-23T16:45:22 EDT" duration-ms="5342" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addCategorySuccessfully -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testscripts.ManageCategoryTests@22f59fa]" started-at="2026-06-23T16:45:22 EDT" name="browserQuit" finished-at="2026-06-23T16:45:23 EDT" duration-ms="1049" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=addCategorySuccessfully status=SUCCESS method=ManageCategoryTests.addCategorySuccessfully()[pri:0, instance:testscripts.ManageCategoryTests@22f59fa] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserQuit -->
-      </class> <!-- testscripts.ManageCategoryTests -->
     </test> <!-- FFTest -->
   </suite> <!-- testng -->
 </testng-results>

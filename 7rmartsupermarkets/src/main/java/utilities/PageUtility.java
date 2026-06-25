@@ -1,5 +1,6 @@
 package utilities;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -82,5 +83,23 @@ public class PageUtility // helper class. repeated methods reusability
 	}
 
 	// ========================================================================================================
+	WaitUtility waitUtilityObj = new WaitUtility();
+
+	public void acceptSimpleAlert(WebDriver driver) {
+
+		try {
+			waitUtilityObj.waitForAlertToBeVisible(driver);
+			Alert alert = driver.switchTo().alert();
+			alert.accept();
+		} catch (Exception e) {
+			// no alert : continue safely
+		}
+	}
+
+	public String getSimpleAlertText(WebDriver driver) {
+		waitUtilityObj.waitForAlertToBeVisible(driver);
+		Alert alert = driver.switchTo().alert();
+		return alert.getText();
+	}
 
 }

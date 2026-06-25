@@ -10,7 +10,9 @@
       <class name="testscripts.AdminUsersTests">
         <methods>
           <include name="addNewUserTypeStaff"/>
+          <include name="addNewUserTypePartner"/>
           <include name="addNewUserTypeDeliveryBoy"/>
+          <include name="addAlreadyExistingUser"/>
           <include name="browserQuit"/>
           <include name="addNewUserTypeAdmin"/>
           <include name="browserInitialization"/>

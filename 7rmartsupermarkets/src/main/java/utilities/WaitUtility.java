@@ -17,7 +17,7 @@ public class WaitUtility {
 
 	}
 
-	public void waiotForAlertToBeVisible(WebDriver driver) {
+	public void waitForAlertToBeVisible(WebDriver driver) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(EXPLICITWAIT));
 		wait.until(ExpectedConditions.alertIsPresent());
 	}
